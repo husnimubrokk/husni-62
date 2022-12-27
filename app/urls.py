@@ -16,10 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.urls import path
-# from . import views
+from home.views import tambah
 urlpatterns = [
     path('admin/', admin.site.urls),
-
-
+    path('tambah/', tambah),
     path('home/', include('home.urls')),
 ]

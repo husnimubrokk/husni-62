@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class="container text-center nt-5">
+        <div class="card mt-5">
+        <form action="" method="post">
+    
+            {% csrf_token %}
+            {{ form.as_p }}
+    
+            <a href="#" class="btn btn-primary">Kirim</a>
+        </form>
+
+    </div>
+    </div>
+
+{% endblock  %}
